@@ -27,10 +27,10 @@
 	type {{ .Name }} {{ .Type | ref }}
 
     {{- if .IsInputMap }}
-        func New{{ $element.Name }}({{- range $f := .MapReq }}{{$f.Name}} {{$f.Type|ref}},{{- end }}) {{ $element.Name }} {
+        func New{{ $element.Name }}({{- range $f := .MapReq }}{{$f.Name}}_ {{$f.Type|ref}},{{- end }}) {{ $element.Name }} {
             return map[string]interface{}{
             {{- range $f := .MapReq }}
-                "{{$f.Name}}": {{$f.Name}},
+                "{{$f.Name}}": {{$f.Name}}_,
             {{- end }}
             }
         }
