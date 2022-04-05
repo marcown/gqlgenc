@@ -3,11 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/99designs/gqlgen/api"
-	"github.com/infiotinc/gqlgenc/clientgen"
-	"github.com/infiotinc/gqlgenc/config"
-	"github.com/infiotinc/gqlgenc/generator"
 	"os"
+
+	"github.com/99designs/gqlgen/api"
+	"github.com/marcown/gqlgenc/clientgen"
+	"github.com/marcown/gqlgenc/config"
+	"github.com/marcown/gqlgenc/generator"
 )
 
 func main() {

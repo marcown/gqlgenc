@@ -2,14 +2,15 @@ package clientgen
 
 import (
 	"fmt"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/codegen/templates"
-	config2 "github.com/infiotinc/gqlgenc/config"
-	"github.com/vektah/gqlparser/v2/ast"
 	"go/types"
 	"math"
 	"sort"
 	"strings"
+
+	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/99designs/gqlgen/codegen/templates"
+	config2 "github.com/marcown/gqlgenc/config"
+	"github.com/vektah/gqlparser/v2/ast"
 )
 
 type FieldPath struct {

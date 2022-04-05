@@ -2,9 +2,10 @@ package clientgen
 
 import (
 	"fmt"
+
 	gqlgenCfg "github.com/99designs/gqlgen/codegen/config"
 	"github.com/99designs/gqlgen/plugin"
-	"github.com/infiotinc/gqlgenc/config"
+	"github.com/marcown/gqlgenc/config"
 )
 
 var _ plugin.ConfigMutator = &Plugin{}

@@ -3,8 +3,9 @@ package extensions
 import (
 	"crypto/sha256"
 	"fmt"
-	"github.com/infiotinc/gqlgenc/client"
-	"github.com/infiotinc/gqlgenc/client/transport"
+
+	"github.com/marcown/gqlgenc/client"
+	"github.com/marcown/gqlgenc/client/transport"
 )
 
 const APQKey = "persistedQuery"

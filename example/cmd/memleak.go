@@ -7,21 +7,22 @@ import (
 	"example/server/generated"
 	_ "expvar" // Register the expvar handlers
 	"fmt"
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/handler/extension"
-	htransport "github.com/99designs/gqlgen/graphql/handler/transport"
-	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/gorilla/websocket"
-	"github.com/infiotinc/gqlgenc/client"
-	"github.com/infiotinc/gqlgenc/client/extensions"
-	"github.com/infiotinc/gqlgenc/client/transport"
 	"net/http"
 	_ "net/http/pprof" // Register the pprof handlers
 	"runtime"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/99designs/gqlgen/graphql"
+	"github.com/99designs/gqlgen/graphql/handler"
+	"github.com/99designs/gqlgen/graphql/handler/extension"
+	htransport "github.com/99designs/gqlgen/graphql/handler/transport"
+	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/gorilla/websocket"
+	"github.com/marcown/gqlgenc/client"
+	"github.com/marcown/gqlgenc/client/extensions"
+	"github.com/marcown/gqlgenc/client/transport"
 )
 
 func round(cli *client.Client) {

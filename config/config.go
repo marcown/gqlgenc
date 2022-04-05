@@ -5,15 +5,16 @@ package config
 import (
 	"context"
 	"fmt"
-	"github.com/infiotinc/gqlgenc/client"
-	"github.com/infiotinc/gqlgenc/client/transport"
-	"github.com/infiotinc/gqlgenc/introspection"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"path/filepath"
 	"regexp"
 	"strings"
+
+	"github.com/marcown/gqlgenc/client"
+	"github.com/marcown/gqlgenc/client/transport"
+	"github.com/marcown/gqlgenc/introspection"
 
 	"github.com/99designs/gqlgen/codegen/config"
 	"github.com/vektah/gqlparser/v2"
